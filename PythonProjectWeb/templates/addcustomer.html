@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+        <div class="container">
+        <h2>ติดต่อเรา</h2>
+        <form action="{{ url_for('insert') }}" method="post">
+         <div class="form-group">
+           <label for="fname">ชื่อ</label>
+           <input type="text" class="form-control"  name="fname">
+         </div>
+         <div class="form-group">
+           <label for="fname">นามสกุล</label>
+           <input type="text" class="form-control"  name="message">
+         </div>
+         <div class="form-group">
+           <label for="fname">Phone</label>
+           <input type="text" class="form-control"  name="phone">
+         </div>
+         <div class="form-group">
+           <label for="fname">Email</label>
+           <input type="text" class="form-control"  name="mail">
+         </div>
+         <a class="btn btn-success" href="/test">กลับหน้าแรก</a>
+         <button type="submit" class="pull-right btn btn-primary">ส่ง</button>
+        </form>
+    </div>
+
+  </body>
+</html>
